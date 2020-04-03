@@ -52,6 +52,13 @@ public class FileController {
 				"attachment; filename=\"" + file.getFilename() + "\"").body(file);
 	}
 
+	@GetMapping("/files/{filename:.+}/delete")
+	public String deleteFile(@PathVariable String filename) {
+		storageService.deleteFile(filename);
+
+		return "redirect:/";
+	}
+
 	@PostMapping("/")
 	public String handleFileUpload(@RequestParam("file") MultipartFile file,
 			RedirectAttributes redirectAttributes) {
