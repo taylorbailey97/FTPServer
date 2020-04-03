@@ -21,58 +21,64 @@ First clone the repository into a directory on your computer. You do this starti
 git clone https://github.com/taylorbailey97/FTPServer.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+### Running the server
 
-## Running the tests
+Follow the steps below to get the server up and running
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+From a command line change into the root directory of the files that you cloned or downloaded earlier. Using cd to change directories like the command below:
 
 ```
-Give an example
+cd yourPathToFolderHoldingFiles/FTPServer
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+Once you're in the servers root folder for files run the following command. NOTE: you may be prompted for permission for Java to access your computer, this is fine allow Java to do so.
 
 ```
-Give an example
+./mvnw spring-boot:run
 ```
 
-## Deployment
+There will be server informational items that pop up on the command line, once it stops outputting information move over to a browser and enter in the search bar at the top of the browser to localhost:8080 or click [here](localhost:8080)
 
-Add additional notes about how to deploy this on a live system
+### Testing the server
 
-## Built With
+After you open up localhost:8080 you'll be directed to a sample html page that has two buttons at the top "Choose File" and "Upload". 
 
-* [Dropwizard](https://www.oracle.com/java/technologies/javase-downloads.html) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+#### Uploading a file
+  1. Click the "Choose File" button and select a file from your system in the pop up window
+  
+  2. Click the "Upload" button, you should see at the top of the screen a success message saying that the file was uploaded
+     successfully
+     
+  3. A list will appear on the webpage with the file you've just uploaded
+  
+  NOTE: Repeat these steps as many times as you'd like adding more and more files to the server
+  
+#### Downloading a file
+  NOTE: There must be at least one file already uploaded to the server before you can download one
+  
+  1. Select a file from the list of files that are displayed on the sample webpage loaded up on localhost:8080
+  
+  2. Click on the blue hyperlink for that file and select a location for the file to download
+  
+  3. The file will begin downloading and you'll be able to access that file from your computer
+  
+#### Updating a file
+  In order to update a file you reupload the same file, so if you wanted to update examplefile.txt you would use the 
+  steps in uploading a file and select examplefile.txt.
+  
+#### Deleting a file
+  NOTE: There must be at least one file already uploaded to the server before you can download one
+  
+  1. Select a file from the list of files that are displayed on the sample webpage loaded up on localhost:8080
+  
+  2. Click on the black hyperlink for that file and that says "Delete"
+  
+  3. The file will be deleted
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Taylor Bailey** - *Initial work* - [Github](https://github.com/taylorbailey97)
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* [Spring.io](https://spring.io/) - has been helpful with documentation and tutorials with getting started with Spring Boot
