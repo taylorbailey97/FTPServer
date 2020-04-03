@@ -77,7 +77,7 @@ After you open up localhost:8080 you'll be directed to a sample html page that h
 
 ## Authors
 
-* **Taylor Bailey** - *Initial work* - [Github](https://github.com/taylorbailey97)
+* **Taylor Bailey** [Github](https://github.com/taylorbailey97)
 
 ## Acknowledgments
 
