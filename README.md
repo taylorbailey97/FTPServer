@@ -1,6 +1,6 @@
 # FTP Server
 
-This is a sample FTP server program that allows the a user to add send a file through an HTTP Post request, update the file, and use a GET request to download the file.
+This is a sample FTP server program that allows a user to add send a file through an HTTP Post request, update the file, and use a GET request to download the file.
 
 ## Getting Started
 
